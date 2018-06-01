@@ -1,0 +1,129 @@
+page-home {
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        top: 10%;
+        right: -3%;
+        width: 200px;
+    }
+    .container img {
+        width: 200px;
+        height: auto;
+    }
+    .hand{
+        position: absolute;
+        width: 200px;
+        background-image: url("../assets/imgs/hands.png");
+        
+    }
+    .finger-1{
+        background-color: brown;
+       // background-image: url("assets/imgs/images1.png");
+        
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top: 88%;
+        right: 46%;
+    }
+    .finger-2{
+        background-color: #2a57a5;
+       // background-image: url("assets/imgs/images1.png");
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 78%;
+        right: 41%;
+    }
+    .finger-3{
+        background-color: #2aa530;
+       // background-image: url("assets/imgs/images1.png");
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 68%;
+        right: 37%;
+    }
+    .finger-4{
+        background-color: #c743cf;
+       // background-image: url("assets/imgs/images1.png");
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 58%;
+        right: 33%;
+    }
+    .finger-5{
+        background-color: #47dad4;
+       // background-image: url("assets/imgs/images1.png");
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 48%;
+        right: 25%;
+    }
+
+
+}
+// transform: translate(-50%, -50%);
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta name="viewport" content="width=device-width, initial-scale=1">
+// <style>
+// .container {
+//     position: relative;
+//     text-align: center;
+//     color: white;
+// }
+
+// .bottom-left {
+//     position: absolute;
+//     bottom: 8px;
+//     left: 16px;
+// }
+
+// .top-left {
+//     position: absolute;
+//     top: 8px;
+//     left: 16px;
+// }
+
+// .top-right {
+//     position: absolute;
+//     top: 8px;
+//     right: 16px;
+// }
+
+// .bottom-right {
+//     position: absolute;
+//     bottom: 8px;
+//     right: 16px;
+// }
+
+// .centered {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// </style>
+// </head>
+// <body>
+
+// <h2>Image Text</h2>
+// <p>How to place text over an image:</p>
+
+// <div class="container">
+//   <img src="img_fjords_wide.jpg" alt="Norway" style="width:100%;">
+//   <div class="bottom-left">Bottom Left</div>
+//   <div class="top-left">Top Left</div>
+//   <div class="top-right">Top Right</div>
+//   <div class="bottom-right">Bottom Right</div>
+//   <div class="centered">Centered</div>
+// </div>
+
+// </body>
+// </html> 
