@@ -1,0 +1,82 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!-- <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+<ion-content padding class="background">
+  <div style="text-align:center; position: relative;height: 100%;">
+      
+    <h3 align="center">Discover</h3>
+    <h3>Your Wish Matchers</h3>
+    <h3 style="color:rgb(189, 82, 189);">Now</h3>
+    <div class="circle-container"  style="top: 2%; position: relative;left: 16%;">
+      <ion-img  align="middle"src='../../assets/imgs/hand.png'class="hand-in-circle"></ion-img>
+    </div>
+    <button ion-button (click)="signIn()" class="center-in-div" 
+      style= "bottom:23%; text-transform: none;">
+        Login with Phone Number
+    </button> 
+
+
+  <p style="left:8%; bottom:17%; position: absolute; color:gray;">
+    By Tapping "Login", you agree to our 
+    <a href="javascript:void(0)" [navPush]="youTouchPage"  style="color: gray">Terms and Privacy policy</a>
+  </p> 
+  <!-- http://google.co.in href="../you-touch/you-touch"-->
+    <p  style="left:47%; bottom:14%; position: absolute">or</p>
+    
+    <div *ngIf="isLoggedIn; else facebookLogin">
+        <h2>Hi, {{users.name}} ({{users.email}})</h2>
+        <p>
+          Gender: {{users.gender}}
+        </p>
+        <p>
+          <img src="{{users.picture.data.url}}" width="100" alt="{{users.name}}" />
+        </p>
+    </div>    
+    <ng-template #facebookLogin>
+      <button  class="center-in-div" (click)="loginWithFacebook()"  ion-button icon-left 
+      style= "text-transform: none; bottom: 4%; color:white;background-color: #3b5998;">
+          <ion-icon name="logo-facebook"></ion-icon>
+          Login with Facebook
+      </button>
+      <p style="left:10%; bottom:1%; position: absolute; color:gray;">
+        We don't post anything on Facebook
+      </p>
+    </ng-template>
+    
+    <a style="position: absolute; top: 63%; left: 20%;"  href="javascript:void(0)"[navPush]="youTouchPage">Home</a>
+    <a style="position: absolute; top: 63%; right:20%;"  href="javascript:void(0)"[navPush]="updateProfilePage">Profile</a>
+
+  </div>
+</ion-content>
+ <!-- ion-item <h5 ALIGN=CENTER >Login</h5> -->
+    <!-- <ion-item class="input-bottom-border center-in-div" style="top: 35%;display:inline-block; " >
+        <ion-input type="number" placeholder="91" style="width: 20px" ></ion-input>
+        <ion-input type="number" placeholder="Your Mobile Number"></ion-input>
+    </ion-item> --> 
+
+    <!-- asdf<ion-item style=" top:28%; ">
+      <ion-input style="position: absolute; width: 12%;" class="input-bottom-border" type="number" value="91" ng-readonly="true"></ion-input>
+      <ion-input style="margin-left: 10%;" class="input-bottom-border" type="number" placeholder="Your Mobile Number"></ion-input>
+    </ion-item> -->
+
+  <!-- <input class="input-bottom-border center-in-div" placeholder="91  Your Mobile Number" 
+     style="top: 35%;"> -->
+  <!-- <div class="row" style="width: 100%; position: absolute; top:70%;">
+      <div class="col-25 col-offset-10 "> 
+        <ion-checkbox style="margin-left: 42%; bottom: -14%;"></ion-checkbox>
+      </div>
+      <div class="col">
+        <a href="http://google.co.in" >Read the Terms and Conditions</a>
+      </div>  
+    </div> -->   
